@@ -1,8 +1,8 @@
 //variables 
 // var background = colour(15, 2, 245)
-var circleY = 450;
-var circleSize;
-
+let circleY = 450;
+let circleSize;
+let blue= color(15,2,245)
 // let sunY=350
 // let sunSize;
 
