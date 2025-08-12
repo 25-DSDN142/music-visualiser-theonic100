@@ -14,7 +14,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 circleSize = map(bass,0,100,10,400)
 
 fill(250, 122, 10);
-  ellipse(200,circleY,circleSize*4);
+  ellipse(200,circleY,circleSize);
 
 
 
