@@ -9,7 +9,7 @@
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  colorMode(HSB,100);
+  colorMode(HSB,50,100);
  background(0);
  strokeWeight(9);
 stroke(drum,80,80);
