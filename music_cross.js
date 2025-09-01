@@ -5,6 +5,8 @@
 // let blue= color(15,2,245)
 // // let sunY=350
 // // let sunSize;
+// let linex=640
+// let liney=280
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 
@@ -20,37 +22,36 @@ line(0,360,1280,360)
  strokeWeight(9);
 stroke(drum,80,80);
 let drumMap=map(drum,0,100,30,90)
-let linex=640
-let liney=280
+
+
+//  for(let i=1;i<10;i=i+1){
+//  let linex=i*5
+//  let liney=i*5
+line(linex,liney-230,linex,liney+390)//vert
+    line(linex-540,liney,linex+540,liney)// horizontal
+  // }
+//}
+
+
+
+  colorMode(HSB,50,100);
+ background(0);
+ strokeWeight(9);
+stroke(drum,80,80);
+fill(drum,100,100)
+//let drumMap=map(drum,0,100,30,90)
+let circlex=150
+let circley=250
 
 for(let i=1;i<drumMap;i=i+1){
-let linex=i*2
-let liney=i+10
-line(linex,liney-280,linex,liney+440)//vert
-    line(linex-640,liney,linex+640,liney)// horizontal
-    }
+  let circley=i*10
+ let circlex=i+50
+circle(circlex,circley,50)
+circle(circlex+50,circley,50)
+circle(circlex+100,circley,50)
+circle(circlex+150,circley,50)
+circle(circlex+200,circley,50)
 }
-
-
-
-//   colorMode(HSB,50,100);
-//  background(0);
-//  strokeWeight(9);
-// stroke(drum,80,80);
-// fill(drum,100,100)
-// let drumMap=map(drum,0,100,30,90)
-// let circlex=150
-// let circley=250
-
-// for(let i=1;i<drumMap;i=i+1){
-//   let circley=i*10
-//   //let circlex=i+50
-// circle(circlex,circley,50)
-// circle(circlex+50,circley,50)
-// circle(circlex+100,circley,50)
-// circle(circlex+150,circley,50)
-// circle(circlex+200,circley,50)
-
 
 
 // let drumMap=map(bass,0,100,30,90)
@@ -68,4 +69,5 @@ line(linex,liney-280,linex,liney+440)//vert
 // for(let i=0; i<=10; i=i+1){
 //   circle(i*20,i*20,10)
 // }
+}
 
