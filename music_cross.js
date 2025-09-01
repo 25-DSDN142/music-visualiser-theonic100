@@ -5,69 +5,46 @@
 // let blue= color(15,2,245)
 // // let sunY=350
 // // let sunSize;
-// let linex=640
-// let liney=280
+let center=640
 
-// vocal, drum, bass, and other are volumes ranging from 0 to 100
+//vocal, drum, bass, and other are volumes ranging from 0 to 100
 
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-// colorMode(HSB,100)
+//colorMode(HSB,50)
 background(0)
-//colorMode(HSB,100)
-stroke(15,2,245)
-strokeWeight(50)
-line(0,360,1280,360)
-  colorMode(HSB,50,100);
- background(0);
- strokeWeight(9);
-stroke(drum,80,80);
-let drumMap=map(drum,0,100,30,90)
+//stroke(15,2,245)
+// strokeWeight(200)
+//line(0,360,1280,360)
+// strokeWeight(70);
+ stroke(vocal,80,80);
+// let drumMap=map(vocal,0,100,300,680);
+//  let drumMap1=map(drum,0,100,180,540);
+//  let drumMap2=map(drum,0,100,200,200);
+//  let drumMap3=map(drum,0,100,200,650); 
+ 
+//let center=640
+let offsetFromTop=50
+let offsetFromBottom = 720 - 50;
+let halfWayDown = 720 / 2;
+let leftx= center-(620/2)
+
+//for(let i=1;i<drumMap;i=i+1){
+//var lineStep=i+10;
+//let center=i+10;
+// line(drumMap,drumMap2,drumMap,drumMap3);//vert top
+//     line(center,drumMap1,drumMap2,drumMap1);// horizontal left
+let crossStrokeWeight = map(bass, 0,100, 50,90)
+ strokeWeight(crossStrokeWeight);
+ line(center,offsetFromTop,center,offsetFromBottom);
+ line(leftx,halfWayDown,leftx + 620, halfWayDown);
 
 
-//  for(let i=1;i<10;i=i+1){
-//  let linex=i*5
-//  let liney=i*5
-line(linex,liney-230,linex,liney+390)//vert
-    line(linex-540,liney,linex+540,liney)// horizontal
-  // }
-//}
+ //  line(center1,liney2,center1+640,liney2);// horizontal left
+ 
 
 
 
-  colorMode(HSB,50,100);
- background(0);
- strokeWeight(9);
-stroke(drum,80,80);
-fill(drum,100,100)
-//let drumMap=map(drum,0,100,30,90)
-let circlex=150
-let circley=250
 
-for(let i=1;i<drumMap;i=i+1){
-  let circley=i*10
- let circlex=i+50
-circle(circlex,circley,50)
-circle(circlex+50,circley,50)
-circle(circlex+100,circley,50)
-circle(circlex+150,circley,50)
-circle(circlex+200,circley,50)
-}
+ }
 
-
-// let drumMap=map(bass,0,100,30,90)
-// let lengthOfLine = 300;
-// let lineStart = 100;
-// let lineEnd= lineStart+lengthOfLine;
-
-
-//  for(let i=1;i<drumMap;i=i+1){
-//   let linestep = i*10;
-// line(lineStart,linestep,lineEnd,linestep);
-
- //}
-
-// for(let i=0; i<=10; i=i+1){
-//   circle(i*20,i*20,10)
-// }
-}
 
