@@ -33,7 +33,7 @@ let leftx= center-(620/2)
 //let center=i+10;
 // line(drumMap,drumMap2,drumMap,drumMap3);//vert top
 //     line(center,drumMap1,drumMap2,drumMap1);// horizontal left
-let crossStrokeWeight = map(bass, 0,100, 50,90)
+let crossStrokeWeight = map(bass, 0,100, 10,100)
  strokeWeight(crossStrokeWeight);
  line(center,offsetFromTop,center,offsetFromBottom);
  line(leftx,halfWayDown,leftx + 620, halfWayDown);
