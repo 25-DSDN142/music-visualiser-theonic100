@@ -12,11 +12,12 @@ background(255, 153, 0)
 //line(0,360,1280,360)
 // strokeWeight(70);
 
-let mountStroke = map(vocal,0,100,20,80)
-stroke(mountStroke,0,0);
+let mountStroke = map(vocal,0,100,10,30)
+strokeWeight(mountStroke)
+stroke(mountStroke);
 fill(0, 255, 42);
-triangle(0,720,426,720,213,360);//left
 triangle(370,720,880,720,639,240);//centre
+triangle(0,720,426,720,213,360);//left
 triangle(823,720,1280,720,1036,360);//right
  
  stroke(255,0,0);
@@ -28,7 +29,9 @@ let leftx= center-(620/2);
 
 
 let crossStrokeWeight = map(drum, 0,100, 10,100);
- strokeWeight(crossStrokeWeight);
+let crossOpacity = map(bass, 0, 100, 50, 255);
+stroke(255,0,0,crossOpacity)
+strokeWeight(crossStrokeWeight);
  line(center,offsetFromTop,center,offsetFromBottom);
  line(leftx,halfWayDown,leftx + 620, halfWayDown);
 
