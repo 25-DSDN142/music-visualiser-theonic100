@@ -11,23 +11,23 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 // strokeWeight(200)
 //line(0,360,1280,360)
 // strokeWeight(70);
-fill(255,255,255)
-stroke(255,255,255)
+//background change
+if(counter<900){background(0)}
+if(counter>900){background(255, 153, 0)}
+
+fill(255)
+noStroke()
 textSize(100)
 text(counter,100,200)
 
-fill(0);
+fill(255);
 noStroke();
 textSize(50);
 text(words,200,200);
 
-if(counter<900){background(0)}
 
 
-
-
-
-if(counter>900){background(255, 153, 0)}
+//three peaks
 let mountStroke = map(vocal,0,100,10,30);
 strokeWeight(mountStroke);
 stroke(41, 89, 33);
@@ -36,21 +36,28 @@ triangle(370,720,880,720,639,240);//centre
 triangle(0,720,426,720,213,360);//left
 triangle(823,720,1280,720,1036,360);//right
 
- //cross info
+ //cross variables
 let offsetFromTop=50;
 let offsetFromBottom = 720 - 50;
 let halfWayDown = 720 / 2.5;
 let leftx= center-(620/2);
+let crossOpacity = 0; //cross fade in from 0
 
-
+//cross fade in and pulse
+if(counter>=900){
+  crossOpacity = map(counter,900,1000,0,255,true);
 let crossStrokeWeight = map(drum, 0,100, 10,100);
-let crossOpacity = map(bass, 0, 100, 50, 255);
-stroke(255,0,0);
+//let crossOpacity = map(bass, 0, 100, 50, 255);
+stroke(255,0,0,crossOpacity);
 strokeWeight(crossStrokeWeight);
  line(center,offsetFromTop,center,offsetFromBottom);//vert line
 line(leftx,halfWayDown,leftx + 620, halfWayDown);//horz line
+}
 
-// if(counter<= 250)
+
+// let crossOpacity = 0;
+// if(counter>=900)
+//   crossOpacity = map(counter,900,1000,0,255,true);
 // for(let i = 0; i<2; i=i+1){
 //   stroke(255,0,0,crossOpacity)
 //   strokeWeight(crossStrokeWeight)
