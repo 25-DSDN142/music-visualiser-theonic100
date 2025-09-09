@@ -5,5 +5,5 @@
 A P5JS framework for running a simple music visualizer, intended as a creative coding I assignment.
 
 Song details: // UPDATE THIS AS YOUR CHANGE YOUR SONG 
-Title = Cody Carnes
-Artist = take you at your word
+Title = goodbye yesterday
+Artist = elevation rythm
