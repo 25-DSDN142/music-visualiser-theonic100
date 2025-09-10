@@ -35,10 +35,10 @@ circle(640,circleY,400)
 //circle sun rise
 if(counter>900&& counter<1300){
   let circlesOpacity;
-  if(counter<900){
+  if(counter>900&&counter<1000){
 circlesOpacity = map(counter,900,1000,0,255,true);
   }
-  if(counter<1300){
+  if(counter>1200&&counter<1300){
     circlesOpacity=map(counter,1200,1300,255,0,true);
   }
 circleSize=map(bass,0,100,400,600)
