@@ -16,11 +16,9 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 //background change
 if(counter<900){
-  //backOpacityA=map(counter,850,1000,255,0)
     background(0,0,0)}
 
 if(counter>900){
-  //backOpacityB=map(counter,1000,1150,0,255)
   background(3, 148, 252)}
 
 
@@ -90,8 +88,6 @@ line(1030,720,1030,lineLength2)//rl3
 
 //again and again
 if(counter>3150 && counter<10200){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
 vocalLength=map(vocal,0,100,200,300)
 stroke(255, 0,0)
 strokeWeight(20)
@@ -105,8 +101,6 @@ line(1030,0,1030,vocalLength)//rl3
 
 //again and again
 if(counter>5400&& counter<10200){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
 vocalLength=map(vocal,0,100,200,300)
 stroke(255, 0,0)
 strokeWeight(20)
@@ -121,8 +115,6 @@ line(1280,250,1280-vocalLength,250)//rl3
 
 //again and again
 if(counter>6180&& counter<10200){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
 vocalLength=map(vocal,0,100,200,300)
 stroke(255, 0,0)
 strokeWeight(20)
@@ -163,13 +155,6 @@ if (counter >= 7200) {
 //first round
 //i wont turn back left 1
 if(counter>10260 && counter<10320){
-//  let crossOpacity
-//  if(counter>10200){ 
-  //  crossOpacity = map(counter,10200,10210,0,255,true);
-    //  }
-// if(counter>7000){
-  //crossOpacity = map(counter,7000,7200,255,0,true)
-// }
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -179,13 +164,6 @@ line(150,520,450,520);//horz line
 
 //i wont turn back right 1
 if(counter>10320&&counter<10440){
-  // let crossOpacity
-  // if(counter>10200){ 
-  //   crossOpacity = map(counter,10200,10210,0,255,true);
-  //     }
-// if(counter>7000){
-  //crossOpacity = map(counter,7000,7200,255,0,true)
-// }
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -196,13 +174,6 @@ line(1130,200,830,200);//horz line
 
 // //i wont turn back left 2 
  if(counter>10440&&counter<10560){
-//   // let crossOpacity
-//   // if(counter>10200){ 
-//   //   crossOpacity = map(counter,10200,10210,0,255,true);
-//   //     }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
 let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -212,13 +183,6 @@ line(150,520,450,520);//horz line
 
 // //i wont turn back right 2
  if(counter>10560&&counter<10620){
-//   // let crossOpacity
-//   // if(counter>10200){ 
-//   //   crossOpacity = map(counter,10200,10210,0,255,true);
-//   //     }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -230,30 +194,16 @@ line(1130,200,830,200);//horz line
 // // //break
 //second round
 //i wont turn back left 1
-// if(counter>10980 && counter<11040){
-// //  let crossOpacity
-// //  if(counter>10200){ 
-//   //  crossOpacity = map(counter,10200,10210,0,255,true);
-//     //  }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
-//    let crossStrokeWeight = map(vocal, 0,100, 10,30);
-// stroke(255,0,0);
-// strokeWeight(crossStrokeWeight);
-//  line(300,360,300,650);//vert line
-// line(150,520,450,520);//horz line
-// }
+if(counter>10920 && counter<11040){
+   let crossStrokeWeight = map(vocal, 0,100, 10,30);
+stroke(255,0,0);
+strokeWeight(crossStrokeWeight);
+ line(300,360,300,650);//vert line
+line(150,520,450,520);//horz line
+}
 
 //i wont turn back right 1
 if(counter>11040&&counter<11160){
-  // let crossOpacity
-  // if(counter>10200){ 
-  //   crossOpacity = map(counter,10200,10210,0,255,true);
-  //     }
-// if(counter>7000){
-  //crossOpacity = map(counter,7000,7200,255,0,true)
-// }
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -264,13 +214,6 @@ line(1130,200,830,200);//horz line
 
 // //i wont turn back left 2 
 if(counter>11160&&counter<11220){
-//   // let crossOpacity
-//   // if(counter>10200){ 
-//   //   crossOpacity = map(counter,10200,10210,0,255,true);
-//   //     }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
 let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -280,13 +223,6 @@ line(150,520,450,520);//horz line
 
 // //i wont turn back right 2
 if(counter>11220&&counter<11280){
-//   // let crossOpacity
-//   // if(counter>10200){ 
-//   //   crossOpacity = map(counter,10200,10210,0,255,true);
-//   //     }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -295,13 +231,6 @@ line(1130,200,830,200);//horz line
 }
 // //i wont turn back left 2 
 if(counter>11280&&counter<11400){
-//   // let crossOpacity
-//   // if(counter>10200){ 
-//   //   crossOpacity = map(counter,10200,10210,0,255,true);
-//   //     }
-// // if(counter>7000){
-//   //crossOpacity = map(counter,7000,7200,255,0,true)
-// // }
 let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
@@ -311,16 +240,10 @@ line(150,520,450,520);//horz line
 
 
 //again and again
-if(counter>11760&&counter<17220){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
-  let crossOpacity
-  if(counter>17220&&counter<17500){ 
-    crossOpacity = map(counter,17220,17500,255,0,true);
-      }
+if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0,crossOpacity)
-strokeWeight(20,crossOpacity)
+stroke(255, 0,0)
+strokeWeight(20)
 line(150,0,150,vocalLength)//ll1
 line(200,0,200,vocalLength)//ll2
 line(250,0,250,vocalLength)//ll3
@@ -330,16 +253,10 @@ line(1030,0,1030,vocalLength)//rl3
 }
 
 //again and again
-if(counter>11760&&counter<17220){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
-  let crossOpacity
-  if(counter>17220&&counter<17500){ 
-    crossOpacity = map(counter,17220,17500,255,0,true);
-      }
+if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0,crossOpacity)
-strokeWeight(20,crossOpacity)
+stroke(255, 0,0)
+strokeWeight(20)
 line(0,150,vocalLength,150)//ll1
 line(0,200,vocalLength,200)//ll2
 line(0,250,vocalLength,250)//ll3
@@ -349,16 +266,10 @@ line(1280,250,1280-vocalLength,250)//rl3
 }
 
 //again and again
-if(counter>12540&&counter<17220){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
-  let crossOpacity
-  if(counter>17220&&counter<17500){ 
-    crossOpacity = map(counter,17220,17500,255,0,true);
-      }
+if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0,crossOpacity)
-strokeWeight(20,crossOpacity)
+stroke(255, 0,0)
+strokeWeight(20)
 line(150,720,150,720-vocalLength)//ll1
 line(200,720,200,720-vocalLength)//ll2
 line(250,720,250,720-vocalLength)//ll3
@@ -368,16 +279,10 @@ line(1030,720,1030,720-vocalLength)//rl3
 }
 
 //again and again
-if(counter>12540&&counter<17220){
-//lineOpacity=map(counter,2400,2500,0,255,true)
-//lineOpacity=map(counter,3000,3150,255,0,true)
-  let crossOpacity
-  if(counter>17220&&counter<17500){ 
-    crossOpacity = map(counter,17220,17500,255,0,true);
-      }
+if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0,crossOpacity)
-strokeWeight(20,crossOpacity)
+stroke(255, 0,0)
+strokeWeight(20)
 line(0,570,vocalLength,570)//ll1
 line(0,520,vocalLength,520)//ll2
 line(0,470,vocalLength,470)//ll3
@@ -394,12 +299,7 @@ if(counter>14040 ){
   if(counter>14040){ 
     crossOpacity = map(counter,14040,14100,0,255,true);
       }
-//  if(counter>7000){
-//   crossOpacity = map(counter,7000,7200,255,0,true)
-//  }
-  // let crossStrokeWeight = map(drum, 0,100, 10,100);
 stroke(255,0,0,crossOpacity);
-//strokeWeight(crossStrokeWeight);
 strokeWeight(50)
  line(center,offsetFromTop,center,offsetFromBottom);//vert line
 line(leftx,halfWayDown,leftx + 620, halfWayDown);//horz line
