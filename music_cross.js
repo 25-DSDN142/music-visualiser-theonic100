@@ -143,17 +143,18 @@ line(1030,720,1030,720-vocalLength)//rl3
 //this section was assisted by AI(copilot) based on the code above
 
 if (counter >= 7200) {
-  let numLayers = 5; // number of concentric circles
-  let baseSize = map(drum, 0, 100, 300, 600); // base size reacts to drum
-  let sizeStep = 50; // how much each layer increases
-  let alphaStep = 50; // opacity decrease for outer layers
+
+  let numLayers = 5; 
+  let baseSize = map(drum, 0, 100, 300, 600);
+  let sizeStep = 50; 
+  let alphaStep = 50; 
 
   noStroke();
 
   for (let i = 0; i < numLayers; i++) {
-    let circleSize = baseSize + i * sizeStep; // bigger for outer layers
-    let alpha = 255 - i * alphaStep; // fade out outer layers
-    fill(255, 150, 0, alpha); // orange with varying transparency
+    let circleSize = baseSize + i * sizeStep;
+    let alpha = (255 - i * alphaStep); // combine both fades
+    fill(255, 150, 0, alpha);
     circle(640, 360, circleSize);
   }
 }
@@ -229,20 +230,20 @@ line(1130,200,830,200);//horz line
 // // //break
 //second round
 //i wont turn back left 1
-if(counter>10980 && counter<11040){
-//  let crossOpacity
-//  if(counter>10200){ 
-  //  crossOpacity = map(counter,10200,10210,0,255,true);
-    //  }
-// if(counter>7000){
-  //crossOpacity = map(counter,7000,7200,255,0,true)
+// if(counter>10980 && counter<11040){
+// //  let crossOpacity
+// //  if(counter>10200){ 
+//   //  crossOpacity = map(counter,10200,10210,0,255,true);
+//     //  }
+// // if(counter>7000){
+//   //crossOpacity = map(counter,7000,7200,255,0,true)
+// // }
+//    let crossStrokeWeight = map(vocal, 0,100, 10,30);
+// stroke(255,0,0);
+// strokeWeight(crossStrokeWeight);
+//  line(300,360,300,650);//vert line
+// line(150,520,450,520);//horz line
 // }
-   let crossStrokeWeight = map(vocal, 0,100, 10,30);
-stroke(255,0,0);
-strokeWeight(crossStrokeWeight);
- line(300,360,300,650);//vert line
-line(150,520,450,520);//horz line
-}
 
 //i wont turn back right 1
 if(counter>11040&&counter<11160){
@@ -310,12 +311,16 @@ line(150,520,450,520);//horz line
 
 
 //again and again
-if(counter>11760){
+if(counter>11760&&counter<17220){
 //lineOpacity=map(counter,2400,2500,0,255,true)
 //lineOpacity=map(counter,3000,3150,255,0,true)
+  let crossOpacity
+  if(counter>17220&&counter<17500){ 
+    crossOpacity = map(counter,17220,17500,255,0,true);
+      }
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
-strokeWeight(20)
+stroke(255, 0,0,crossOpacity)
+strokeWeight(20,crossOpacity)
 line(150,0,150,vocalLength)//ll1
 line(200,0,200,vocalLength)//ll2
 line(250,0,250,vocalLength)//ll3
@@ -325,12 +330,16 @@ line(1030,0,1030,vocalLength)//rl3
 }
 
 //again and again
-if(counter>11760){
+if(counter>11760&&counter<17220){
 //lineOpacity=map(counter,2400,2500,0,255,true)
 //lineOpacity=map(counter,3000,3150,255,0,true)
+  let crossOpacity
+  if(counter>17220&&counter<17500){ 
+    crossOpacity = map(counter,17220,17500,255,0,true);
+      }
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
-strokeWeight(20)
+stroke(255, 0,0,crossOpacity)
+strokeWeight(20,crossOpacity)
 line(0,150,vocalLength,150)//ll1
 line(0,200,vocalLength,200)//ll2
 line(0,250,vocalLength,250)//ll3
@@ -340,12 +349,16 @@ line(1280,250,1280-vocalLength,250)//rl3
 }
 
 //again and again
-if(counter>12540){
+if(counter>12540&&counter<17220){
 //lineOpacity=map(counter,2400,2500,0,255,true)
 //lineOpacity=map(counter,3000,3150,255,0,true)
+  let crossOpacity
+  if(counter>17220&&counter<17500){ 
+    crossOpacity = map(counter,17220,17500,255,0,true);
+      }
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
-strokeWeight(20)
+stroke(255, 0,0,crossOpacity)
+strokeWeight(20,crossOpacity)
 line(150,720,150,720-vocalLength)//ll1
 line(200,720,200,720-vocalLength)//ll2
 line(250,720,250,720-vocalLength)//ll3
@@ -355,12 +368,16 @@ line(1030,720,1030,720-vocalLength)//rl3
 }
 
 //again and again
-if(counter>12540){
+if(counter>12540&&counter<17220){
 //lineOpacity=map(counter,2400,2500,0,255,true)
 //lineOpacity=map(counter,3000,3150,255,0,true)
+  let crossOpacity
+  if(counter>17220&&counter<17500){ 
+    crossOpacity = map(counter,17220,17500,255,0,true);
+      }
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
-strokeWeight(20)
+stroke(255, 0,0,crossOpacity)
+strokeWeight(20,crossOpacity)
 line(0,570,vocalLength,570)//ll1
 line(0,520,vocalLength,520)//ll2
 line(0,470,vocalLength,470)//ll3
@@ -380,9 +397,10 @@ if(counter>14040 ){
 //  if(counter>7000){
 //   crossOpacity = map(counter,7000,7200,255,0,true)
 //  }
-   let crossStrokeWeight = map(drum, 0,100, 10,100);
+  // let crossStrokeWeight = map(drum, 0,100, 10,100);
 stroke(255,0,0,crossOpacity);
-strokeWeight(crossStrokeWeight);
+//strokeWeight(crossStrokeWeight);
+strokeWeight(50)
  line(center,offsetFromTop,center,offsetFromBottom);//vert line
 line(leftx,halfWayDown,leftx + 620, halfWayDown);//horz line
 }
