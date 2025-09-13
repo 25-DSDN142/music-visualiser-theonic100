@@ -305,7 +305,22 @@ strokeWeight(50)
 line(leftx,halfWayDown,leftx + 620, halfWayDown);//horz line
 }
 
-
+// //i wont turn back right 2
+if(counter>15660){
+   let crossStrokeWeight = map(vocal, 0,100, 10,30);
+stroke(255,0,0);
+strokeWeight(crossStrokeWeight);
+ line(880,360,880,650);//vert line
+line(1005,500,755,500);//horz line
+}
+// //i wont turn back left 2 
+if(counter>15660){
+let crossStrokeWeight = map(vocal, 0,100, 10,30);
+stroke(255,0,0);
+strokeWeight(crossStrokeWeight);
+ line(400,360,400,650);//vert line
+line(275,500,525,500);//horz line
+}
 
 // //counter
 fill(255)
