@@ -55,7 +55,7 @@ if(counter>1200 && counter<7200){
  if(counter>7000){
   crossOpacity = map(counter,7000,7200,255,0,true)
  }
-   let crossStrokeWeight = map(drum, 0,100, 10,100);
+   let crossStrokeWeight = map(bass, 0,100, 10,100);
 stroke(255,0,0,crossOpacity);
 strokeWeight(crossStrokeWeight);
  line(center,offsetFromTop,center,offsetFromBottom);//vert line
