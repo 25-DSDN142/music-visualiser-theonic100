@@ -242,7 +242,7 @@ line(150,520,450,520);//horz line
 //again and again
 if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
+stroke(255, 150, 0)
 strokeWeight(20)
 line(150,0,150,vocalLength)//ll1
 line(200,0,200,vocalLength)//ll2
@@ -255,7 +255,7 @@ line(1030,0,1030,vocalLength)//rl3
 //again and again
 if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
+stroke(255, 150, 0)
 strokeWeight(20)
 line(0,150,vocalLength,150)//ll1
 line(0,200,vocalLength,200)//ll2
@@ -268,7 +268,7 @@ line(1280,250,1280-vocalLength,250)//rl3
 //again and again
 if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
+stroke(255, 150, 0)
 strokeWeight(20)
 line(150,720,150,720-vocalLength)//ll1
 line(200,720,200,720-vocalLength)//ll2
@@ -281,7 +281,7 @@ line(1030,720,1030,720-vocalLength)//rl3
 //again and again
 if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 0,0)
+stroke(255, 150, 0)
 strokeWeight(20)
 line(0,570,vocalLength,570)//ll1
 line(0,520,vocalLength,520)//ll2
@@ -311,7 +311,7 @@ if(counter>15660){
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
  line(880,360,880,650);//vert line
-line(1005,500,755,500);//horz line
+line(975,500,775,500);//horz line
 }
 // //i wont turn back left 2 
 if(counter>15660){
@@ -319,7 +319,7 @@ let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
 strokeWeight(crossStrokeWeight);
  line(400,360,400,650);//vert line
-line(275,500,525,500);//horz line
+line(310,500,490,500);//horz line
 }
 
 // //counter
