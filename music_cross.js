@@ -28,10 +28,11 @@ if(counter>900){
 if(counter<900){
 circlesOpacity = map(counter,850,950,255,0,true)
 let circleY=map(counter,0,900,300,720,true)
-fill(247, 195, 5,circlesOpacity)
+fill(168, 163, 163,circlesOpacity)
 noStroke()
 circle(640,circleY,400)
 }
+
 //circle sun rise
 if(counter>900&& counter<1300){
   let circlesOpacity;
@@ -42,7 +43,7 @@ circlesOpacity = map(counter,900,1000,0,255,true);
     circlesOpacity=map(counter,1200,1300,255,0,true);
   }
 circleSize=map(bass,0,100,400,600)
-fill(247, 195, 5,circlesOpacity)
+fill(255, 150, 0,circlesOpacity)
 noStroke()
 circle(640,360,circleSize)
 }
@@ -313,7 +314,7 @@ strokeWeight(50)
 line(leftx,halfWayDown,leftx + 620, halfWayDown);//horz line
 }
 
-// //i wont turn back right 2
+// //dancing on the grave
 if(counter>15660){
    let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
@@ -321,7 +322,7 @@ strokeWeight(crossStrokeWeight);
  line(880,360,880,650);//vert line
 line(975,500,775,500);//horz line
 }
-// //i wont turn back left 2 
+// //dancing on the grave
 if(counter>15660){
 let crossStrokeWeight = map(vocal, 0,100, 10,30);
 stroke(255,0,0);
