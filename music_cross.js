@@ -331,15 +331,6 @@ strokeWeight(crossStrokeWeight);
 line(310,500,490,500);//horz line
 }
 
-// // //counter
-// fill(255)
-// noStroke()
-// textSize(80)
-// // text(co,100,200)
- 
-
-//   let seconds = counter / 60;  // assuming 60 fps
-//   text("Seconds: " + nf(seconds, 1, 2), 50, 50);
 }
 
 
