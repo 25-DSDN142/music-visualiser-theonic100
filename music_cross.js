@@ -22,13 +22,14 @@ if(counter>900){
   background(3, 148, 252)}
 
 
-
+//// start of song
 
 //circle sun down 
 if(counter<900){
 circlesOpacity = map(counter,850,950,255,0,true)
-fill(247, 195, 5,circlesOpacity)
 let circleY=map(counter,0,900,300,720,true)
+fill(247, 195, 5,circlesOpacity)
+noStroke()
 circle(640,circleY,400)
 }
 //circle sun rise
@@ -42,6 +43,7 @@ circlesOpacity = map(counter,900,1000,0,255,true);
   }
 circleSize=map(bass,0,100,400,600)
 fill(247, 195, 5,circlesOpacity)
+noStroke()
 circle(640,360,circleSize)
 }
 
@@ -86,6 +88,10 @@ line(1030,720,1030,lineLength2)//rl3
 
 }
 
+
+//// middle of song
+
+
 //again and again
 if(counter>3150 && counter<10200){
 vocalLength=map(vocal,0,100,200,300)
@@ -128,6 +134,8 @@ line(1030,720,1030,720-vocalLength)//rl3
 
 
 // //big drums circles
+
+
 // if(counter>=7200){
 // circleSize=map(drum,0,100,500,800)
 // circle(640,360,circleSize)}
@@ -242,7 +250,7 @@ line(150,520,450,520);//horz line
 //again and again
 if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 150, 0)
+stroke(255, 0, 0)
 strokeWeight(20)
 line(150,0,150,vocalLength)//ll1
 line(200,0,200,vocalLength)//ll2
@@ -255,7 +263,7 @@ line(1030,0,1030,vocalLength)//rl3
 //again and again
 if(counter>11760){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 150, 0)
+stroke(255, 0, 0)
 strokeWeight(20)
 line(0,150,vocalLength,150)//ll1
 line(0,200,vocalLength,200)//ll2
@@ -268,7 +276,7 @@ line(1280,250,1280-vocalLength,250)//rl3
 //again and again
 if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 150, 0)
+stroke(255, 0, 0)
 strokeWeight(20)
 line(150,720,150,720-vocalLength)//ll1
 line(200,720,200,720-vocalLength)//ll2
@@ -281,7 +289,7 @@ line(1030,720,1030,720-vocalLength)//rl3
 //again and again
 if(counter>12540){
 vocalLength=map(vocal,0,100,200,300)
-stroke(255, 150, 0)
+stroke(255, 0, 0)
 strokeWeight(20)
 line(0,570,vocalLength,570)//ll1
 line(0,520,vocalLength,520)//ll2
@@ -291,7 +299,7 @@ line(1280,520,1280-vocalLength,520)//rl2
 line(1280,470,1280-vocalLength,470)//rl3
 }
 
-// //ending 
+// //ending of song 
 
 //cross fade in/out and pulse
 if(counter>14040 ){
@@ -322,15 +330,15 @@ strokeWeight(crossStrokeWeight);
 line(310,500,490,500);//horz line
 }
 
-// //counter
-fill(255)
-noStroke()
-textSize(80)
-// text(co,100,200)
+// // //counter
+// fill(255)
+// noStroke()
+// textSize(80)
+// // text(co,100,200)
  
 
-  let seconds = counter / 60;  // assuming 60 fps
-  text("Seconds: " + nf(seconds, 1, 2), 50, 50);
+//   let seconds = counter / 60;  // assuming 60 fps
+//   text("Seconds: " + nf(seconds, 1, 2), 50, 50);
 }
 
 
